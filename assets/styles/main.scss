@@ -1,5 +1,6 @@
+$body-background-color: #f7f7f7;
 $soil-color: #6e7cff;
-$air-color: #91cdc6;
+$air-color: #85b9b3;
 $temp-color: #f57c00;
 $light-color: #e1aa23;
 $main-color: #388e3c;
@@ -16,6 +17,7 @@ $light-card-color: rgba(255, 217, 163, 0.4);
 }
 
 body {
+  background-color: $body-background-color;
   width: 100%;
 }
 
