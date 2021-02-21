@@ -1,17 +1,27 @@
 $soil-color: #6e7cff;
 $air-color: #9fe4dc;
-$temp-color: #eba45d;
-$light-color: #ffd9a3;
+$temp-color: #f57c00;
+$light-color: #fbc02d;
 $main-color: #388e3c;
 $user-info-color: #455a64;
 $main-text-color: #767676;
+$temp-card-color: rgba(235, 164, 93, 0.4);
+$air-hum-card-color: rgba(159, 228, 220, 0.4);
+$soil-hum-card-color: rgba(110, 124, 255, 0.4);
+$light-card-color: rgba(255, 217, 163, 0.4);
 
 * {
   margin: 0;
   padding: 0;
 }
 
+body {
+  width: 100%;
+}
+
 .nav-bar {
+  width: 100%;
+
   .nav-logo-img,
   .user-profile-img {
     width: 6vw;
@@ -36,6 +46,8 @@ $main-text-color: #767676;
 }
 
 main {
+  width: 100%;
+
   .sector-title {
     color: $main-text-color;
     font-size: 9vw;
@@ -43,25 +55,47 @@ main {
 
   .temp-card {
     color: $temp-color;
-    border: 1px solid rgba(235, 164, 93, 0.4);
+    border: 1px solid $temp-card-color;
+    box-shadow: 1px 1px 1px $temp-card-color, -1px -1px 1px $temp-card-color;
     border-radius: 6px;
   }
 
   .air-hum-card {
     color: $air-color;
-    border: 1px solid rgba(159, 228, 220, 0.4);
+    border: 1px solid $air-hum-card-color;
+    box-shadow: 1px 1px 1px $air-hum-card-color, -1px -1px 1px $air-hum-card-color;
     border-radius: 6px;
   }
 
   .soil-hum-card {
     color: $soil-color;
-    border: 1px solid rgba(110, 124, 255, 0.4);
+    border: 1px solid $soil-hum-card-color;
+    box-shadow: 1px 1px 1px $soil-hum-card-color, -1px -1px 1px $soil-hum-card-color;
     border-radius: 6px;
   }
 
   .light-card {
     color: $light-color;
-    border: 1px solid rgba(255, 217, 163, 0.4);
+    border: 1px solid $light-card-color;
+    box-shadow: 1px 1px 1px $light-card-color, -1px -1px 1px $light-card-color;
     border-radius: 6px;
+  }
+
+  .devices-info-container {
+    .device-title {
+      color: $main-text-color
+    }
+
+    .fa-faucet {
+      color: $soil-color;
+    }
+
+    .fa-lightbulb {
+      color: $light-color;
+    }
+
+    .fa-fan {
+      color: $air-color;
+    }
   }
 }
