@@ -11,11 +11,10 @@ $air-hum-card-color: rgba(159, 228, 220, 0.4);
 $soil-hum-card-color: rgba(110, 124, 255, 0.4);
 $light-card-color: rgba(255, 217, 163, 0.4);
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Bold+Display:wght@400;800&display=swap');
-
-$playfair-regular: 'Playfair Display';
-$playfair-xtra-bold: 'Playfair Bold Display';
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+Regular&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700&display=swap');
+$main-font-regular: 'Shippori Mincho Regular';
+$main-font-bold: 'Shippori Mincho B1';
 
 * {
   margin: 0;
@@ -37,14 +36,14 @@ body {
 
   .nav-title {
     font-size: 6vw;
-    font-family: $playfair-regular, serif;
+    font-family: $main-font-regular, serif;
     text-transform: uppercase;
     color: $main-color;
   }
 
   .user-name {
     font-size: 3.5vw;
-    font-family: $playfair-regular, serif;
+    font-family: $main-font-regular, serif;
     text-transform: capitalize;
     color: $user-info-color;
   }
@@ -60,18 +59,19 @@ main {
 
   .sector-title {
     color: $main-text-color;
-    font-family: $playfair-xtra-bold, serif;
+    font-family: $main-font-bold, serif;
     font-size: 9vw;
   }
 
   .last-scan-container {
     color: #111;
-    font-family: $playfair-regular, serif;
+    font-family: $main-font-regular, serif;
     font-size: 2.8vw;
   }
 
   .temp-card {
-    font-family: $playfair-regular, serif;
+    font-family: $main-font-regular, serif;
+    font-size: 5vw;
     color: $temp-color;
     border: 1px solid $temp-card-color;
     box-shadow: 1px 1px 1px $temp-card-color, -1px -1px 1px $temp-card-color;
@@ -79,7 +79,8 @@ main {
   }
 
   .air-hum-card {
-    font-family: $playfair-regular, serif;
+    font-family: $main-font-regular, serif;
+    font-size: 5vw;
     color: $air-color;
     border: 1px solid $air-hum-card-color;
     box-shadow: 1px 1px 1px $air-hum-card-color, -1px -1px 1px $air-hum-card-color;
@@ -87,7 +88,8 @@ main {
   }
 
   .soil-hum-card {
-    font-family: $playfair-regular, serif;
+    font-family: $main-font-regular, serif;
+    font-size: 5vw;
     color: $soil-color;
     border: 1px solid $soil-hum-card-color;
     box-shadow: 1px 1px 1px $soil-hum-card-color, -1px -1px 1px $soil-hum-card-color;
@@ -95,7 +97,8 @@ main {
   }
 
   .light-card {
-    font-family: $playfair-regular, serif;
+    font-family: $main-font-regular, serif;
+    font-size: 5vw;
     color: $light-color;
     border: 1px solid $light-card-color;
     box-shadow: 1px 1px 1px $light-card-color, -1px -1px 1px $light-card-color;
